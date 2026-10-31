@@ -3,11 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento</title>
+    <title>Pagina Inicial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <meta name="description" content="descriçao">
     <meta name="author" content="Miguel Jose Mansilla Avila">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/curso.js" defer></script>
 </head>
-<body>
+<body>                                                                                    
+    <header>
+        <img src="imagens/house-solid-full.svg" alt="logo da empresa">
+        <span>Câmara de Empreendedores do Brasil</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav id="barra-navegacao" class="navegacao">
+        <ul>
+            <li class="atual"><a href="#">Pagina Inicial</a></li>
+            <li><a href="#">Projeto da Câmara</a></li>
+            <li><a href="#">Projeto Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Página Inicial</h1>
+        <div class="container">
+            <section class="card">
+                <h2>Sobre Mim</h2>
+                <div class="sobre-mim">
+                    <p>Meu nome é Miguel Jose Mancilla Avila, sou de Santa Elena de Uairen, Edo Bolivar,
+                        Venezuela. Tenho dois anos morando em Sao Paulo e estou gostando de viver aqui.
+                        Trabalho como operador de maquina na empresa azepel. Sou membro da igreja de Jesus
+                        Cristo dos Santos dos Ultimos Dias. Teve a oportunidade de servir como missionario o que
+                        fortaleceu meu evangelho de Jesus Cristo e me permitiu ajudar a muitas pessoas a conhecer
+                        o evangelho de Jesus Cristo. Atualmente sou o professor da aula de quorum de elderes o que
+                        estou gostando porque posso ajudar a os membros do quorum de elderes a fortalecer seu testemonha
+                        e tambem posso aprender deles.</p>
+                </div>
+                
+            </section>
+            <section class="card">
+                <h2>Foto</h2>
+                <div class="foto-perfil">
+                    <img src="imagens/perfil.webp" alt="foto de perfil" id="foto-estudante">
+                </div>
+                                
+            </section>           
+        </div>
+        <section>
+            <h2>Cursos de Cetificação Web</h2>
+            <div class="card-content">
+                <div class="filtros">
+                    <button class="filtro-btn ativo" data-filtro="Todos">Todos</button>
+                    <button class="filtro-btn" data-filtro="CSE">CSE</button>
+                    <button class="filtro-btn" data-filtro="WDD">WDD</button>
+                </div>
+                <div id="lista-cursos" class="lista-cursos"></div>
+                <p id="total-creditos" class="total-creditos">O total de créditos para os cursos listados acima é 0</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/miguel-mancilla/" target="_blank"><img src="imagens/linkedin.svg" alt="logo do linkedin" width="16" height="16"></a>
+            <a href="https://github.com/miguelman86/wdd231" target="_blank"><img src="imagens/github.svg" alt="logo do github" width="16" height="16"></a>
+            <a href="https://www.facebook.com/MiguelJoseMancilla" target="_blank"><img src="imagens/facebook.svg" alt="logo do facebook" width="16" height="16"></a>
+        </div>
+        <div class="data">
+            <p>&copy;<span id="anoatual"></span> ◾ Miguel Jose Mancilla Avila ◾ Venezuela</p>
+            <p id="ultimaModificacao"></p>
+        </div>
+        
+    </footer>
+    
+
     
 </body>
 </html>
