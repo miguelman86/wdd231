@@ -52,6 +52,7 @@ header span {
 
 .navegacao {
     display: none;
+    color: #fff;
     background-color: #092b52;
 }
 
@@ -120,9 +121,7 @@ h2{
 }
 
 #foto-estudante {
-    width: 100;
-    max-width: 300px;
-    height: auto;
+    max-width: 250px;
     min-height: 250px;
     object-fit: cover;
     border: #333 solid 1px;
