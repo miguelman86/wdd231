@@ -77,7 +77,7 @@ img,
 svg,
 video,
 canvas {
-  display: block;
+  /* display: block; */
   max-width: 100%;
 }
 
