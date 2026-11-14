@@ -5,13 +5,13 @@
 }
 
 :root {
-    --azul-profundo: #0A2540;
-    --azul-vivo: #002aff;
+    --azul-profundo: #94aec9;
+    --azul-vivo: #0427da;
     --ciano-neon: #00E5FF;
     --fundo-claro: #F6F9FC;
     --fundo-claro2: #eaf4ff;
     --branco: #FFFFFF;
-    --texto-escuro: #0A2540;
+    --texto-escuro: #000203;
     --texto-claro: #E6F4FF;
     --border: #dddddd;
 }
@@ -50,13 +50,11 @@ header img {
 header h1 {
     font-size: 1.2rem;
     line-height: 1.2;
-    color: var(--branco);
 }
 
 .hamburger {
     background: none;
     border: none;
-    color: var(--branco);
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px;
@@ -93,18 +91,17 @@ header h1 {
     display: block;
     padding: 15px 30px;
     text-decoration: none;
-    color: var(--branco);
     border-bottom: var(--border) solid 1px;
 }
 
 .navegacao .atual {
-    background-color: var(--azul-vivo);
+    background-color: var(--ciano-neon);
     /* text-decoration: underline; */
     font-weight: bold;
 }
 
 .navegacao a:hover {
-    background-color: var(--texto-escuro);
+    background-color: var(--ciano-neon);
 }
 
 /*******  MAIN  ********/
@@ -124,7 +121,7 @@ main {
 }
 
 .cabecalho-diretorio h2 {
-    font-weight: 3rem;
+    font-size: 2rem;
 }
 
 .botoes-visualizacao {
@@ -149,7 +146,7 @@ main {
 }
 
 .botoes-visualizacao button.ativo {
-    background: var(--azul-profundo);
+    background: var(--azul-vivo);
     color: var(--branco);
 }
 
@@ -178,7 +175,6 @@ main {
 }
 
 .badge {
-    background: var(--branco);
     color: var(--texto-escuro);
     padding: .2rem .6rem;
     border-radius: 20px;
@@ -233,7 +229,6 @@ footer {
     display: block;
     padding: 10px;
     background-color: var(--azul-profundo);
-    color: var(--branco);
 }
 
 .social {
