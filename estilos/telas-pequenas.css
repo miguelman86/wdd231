@@ -26,9 +26,10 @@ header img {
     height: auto;
 }
 
-header span {
-    font-size: 1.2rem;
-    color: #020741;
+.nome-empresa {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
 }
 
 .hamburger {

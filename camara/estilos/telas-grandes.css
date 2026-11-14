@@ -1,0 +1,57 @@
+@media only screen and (min-width: 38rem) {
+    header, main, nav,footer {
+        max-width: 1200px;
+        margin: 0;    
+    }
+    
+    header {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 10px;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    
+    .navegacao {
+        display: block;
+    }
+    
+    .navegacao ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+    }
+    
+    .navegacao a {
+        border: none;
+    }
+
+    #membros.grade {
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    #membros.lista .cartao {
+        grid-template-columns: 1.1fr 1.3fr .8fr 1.2fr;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    #membros.lista .cartao .endereco {
+        white-space: pre-line;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    footer div {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+
+}

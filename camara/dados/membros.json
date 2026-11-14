@@ -1,0 +1,82 @@
+[
+  {
+    "nome": "ByteForge Tecnologia",
+    "endereco": "Rua das Acacias, 2154 - Campinas, SP 13090-480",
+    "telefone": "(19) 3847-5012",
+    "website": "https://www.byteforge.tech",
+    "imagem": "byteforge.svg",
+    "nivel": 3,
+    "categoria": "Tecnologia",
+    "descricao": "Desenvolvimento de software e soluções em nuvem."
+  },
+  {
+    "nome": "PixelCraft Design",
+    "endereco": "Av. das Nacoes, 876 - Salvador, BA 41820-190",
+    "telefone": "(71) 3298-5643",
+    "website": "https://www.pixelcraft.design",
+    "imagem": "pixelcraft.svg",
+    "nivel": 2,
+    "categoria": "Design",
+    "descricao": "Branding, UI/UX e design digital."
+  },
+  {
+    "nome": "WebMakers Studio",
+    "endereco": "Rua Hortencias, 3421 - Brasilia, DF 70380-110",
+    "telefone": "(61) 3456-2189",
+    "website": "https://www.webmakers.com.br",
+    "imagem": "webmakers.svg",
+    "nivel": 3,
+    "categoria": "Web",
+    "descricao": "Criação de sites e lojas virtuais."
+  },
+  {
+    "nome": "DesignHub Criativo",
+    "endereco": "Av. Central, 1890 - Goiania, GO 74223-070",
+    "telefone": "(62) 3321-7654",
+    "website": "https://www.designhub.cri.br",
+    "imagem": "designhub.svg",
+    "nivel": 1,
+    "categoria": "Design",
+    "descricao": "Design gráfico e comunicação visual."
+  },
+  {
+    "nome": "CodeNova Sistemas",
+    "endereco": "Rua Tecnologia, 567 - Florianopolis, SC 88015-200",
+    "telefone": "(48) 3289-4321",
+    "website": "https://www.codenova.systems",
+    "imagem": "codenova.svg",
+    "nivel": 2,
+    "categoria": "Tecnologia",
+    "descricao": "Sistemas sob medida e automação."
+  },
+  {
+    "nome": "VisionTech Soluções",
+    "endereco": "Av. Amazonas, 4522 - Manaus, AM 69057-010",
+    "telefone": "(92) 3667-8901",
+    "website": "https://www.visiontech.solutions",
+    "imagem": "visiontech.svg",
+    "nivel": 3,
+    "categoria": "Tecnologia",
+    "descricao": "Consultoria em TI e segurança digital."
+  },
+  {
+    "nome": "CreativeFlow Midia",
+    "endereco": "Rua das Flores, 987 - Osasco, SP 06010-100",
+    "telefone": "(11) 4412-6789",
+    "website": "https://www.creativeflow.media",
+    "imagem": "creativeflow.svg",
+    "nivel": 1,
+    "categoria": "Marketing",
+    "descricao": "Marketing digital e produção de conteúdo."
+  },
+  {
+    "nome": "SmartWeb Desenvolvimento",
+    "endereco": "Rua Progresso, 2160 - Vitoria, ES 29090-260",
+    "telefone": "(27) 3345-9876",
+    "website": "https://www.smartweb.dev",
+    "imagem": "smartweb.svg",
+    "nivel": 2,
+    "categoria": "Web",
+    "descricao": "Aplicativos web e e-commerce."
+  }
+]
