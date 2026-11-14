@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --azul-profundo: #0A2540;
+    --azul-vivo: #002aff;
+    --ciano-neon: #00E5FF;
+    --fundo-claro: #F6F9FC;
+    --fundo-claro2: #eaf4ff;
+    --branco: #FFFFFF;
+    --texto-escuro: #0A2540;
+    --texto-claro: #E6F4FF;
+    --border: #dddddd;
+}
+
 /********* CABEÇALHO *********/
 
 body {
@@ -13,11 +25,11 @@ body {
 header {
     display: flex;
     flex-wrap: wrap;
-    border-bottom: solid 1px #dddddd;
+    border-bottom: solid 1px var(--border);
     column-gap: 8px;
     align-items: center;
     justify-content: space-between;
-    background-color: #74aee0;
+    background-color: var(--azul-profundo);
 }
 
 .cabecalho {
@@ -29,8 +41,8 @@ header {
 header img {
     display: block;
     width: auto;
-    height: 100%;
-    max-width: 60px;
+    height: 42px;
+    max-width: 42px;
     object-fit: contain;
     margin: 10px 0 10px 10px;
 }
@@ -38,13 +50,13 @@ header img {
 header h1 {
     font-size: 1.2rem;
     line-height: 1.2;
-    color: #000000;
+    color: var(--branco);
 }
 
 .hamburger {
     background: none;
     border: none;
-    color: #000000;
+    color: var(--branco);
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px;
@@ -65,7 +77,6 @@ header h1 {
     display: none;
     flex-basis: 100%;
     align-items: center;
-    color: #000000;
 }
 
 .navegacao.show {
@@ -82,24 +93,24 @@ header h1 {
     display: block;
     padding: 15px 30px;
     text-decoration: none;
-    color: #000000;
-    border-bottom: #ccc solid 1px;
+    color: var(--branco);
+    border-bottom: var(--border) solid 1px;
 }
 
 .navegacao .atual {
-    background-color: #e2e7eb;
+    background-color: var(--azul-vivo);
     /* text-decoration: underline; */
     font-weight: bold;
 }
 
 .navegacao a:hover {
-    background-color: #14b9e2;
+    background-color: var(--texto-escuro);
 }
 
 /*******  MAIN  ********/
 
 main {
-    background-color: #dcdfdd;
+    background-color: var(--fundo-claro);
     max-width: 1100px;
     margin: auto;
     padding: 1rem
@@ -113,7 +124,7 @@ main {
 }
 
 .cabecalho-diretorio h2 {
-    font-weight: 400;
+    font-weight: 3rem;
 }
 
 .botoes-visualizacao {
@@ -129,17 +140,17 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #005a9c;
-    background: #fff;
-    color: #005a9c;
+    border: 1px solid var(--azul-profundo);
+    background: var(--branco);
+    color: var(--texto-escuro);
     font-size: 1.4rem;
     line-height: 1;
     cursor: pointer
 }
 
 .botoes-visualizacao button.ativo {
-    background: #005a9c;
-    color: #fff;
+    background: var(--azul-profundo);
+    color: var(--branco);
 }
 
 #membros.grade {
@@ -149,13 +160,13 @@ main {
 }
 
 #membros.grade .cartao .site {
-    color: #031668;
+    color: var(--texto-escuro);
 
 }
 
 .cartao {
-    background: #ffffff;
-    border: 1px solid #dddddd;
+    background: var(--branco);
+    border: 1px solid var(--azul-vivo);
     border-radius: 10px;
     padding: 1rem;
     text-align: center
@@ -167,8 +178,8 @@ main {
 }
 
 .badge {
-    background: #ffffff;
-    color: #005a9c;
+    background: var(--branco);
+    color: var(--texto-escuro);
     padding: .2rem .6rem;
     border-radius: 20px;
     font-weight: 700
@@ -184,13 +195,13 @@ main {
     gap: .15rem;
     text-align: left;
     border: none;
-    border-bottom: 1px solid #d9e2e8;
+    border-bottom: 1px solid var(--border);
     border-radius: 0;
     padding: 1rem;
 }
 
 #membros.lista .cartao:nth-child(even) {
-    background: #eaf4ff
+    background: var(--fundo-claro2);
 }
 
 #membros.lista .cartao img,
@@ -200,19 +211,18 @@ main {
 }
 
 #membros.lista .cartao .nome {
-    color: #0b4d2e;
+    color: var(--texto-escuro);
     font-size: 1rem;
     font-weight: 400;
 }
 
 #membros.lista .cartao .endereco,
 #membros.lista .cartao .telefone {
-    color: #444444;
     font-size: .95rem;
 }
 
 #membros.lista .cartao .site {
-    color: #005a9c;
+    color: var(--azul-vivo);
     font-size: .95rem;
     word-break: break-all;
 }
@@ -222,8 +232,8 @@ main {
 footer {
     display: block;
     padding: 10px;
-    background-color: #74aee0;
-    color: #000000;
+    background-color: var(--azul-profundo);
+    color: var(--branco);
 }
 
 .social {
@@ -239,7 +249,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: #ccc solid 1px; */
     width: 68px;
     height: 68px;
 }
@@ -250,6 +259,6 @@ footer {
 }
 
 .social a:hover {
-    background-color: #dddddd;
+    background-color: var(--fundo-claro);
 }
 
