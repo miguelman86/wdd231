@@ -13,11 +13,11 @@ body {
 header {
     display: flex;
     flex-wrap: wrap;
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px #dddddd;
     column-gap: 8px;
     align-items: center;
     justify-content: space-between;
-    background-color: #8596bc;
+    background-color: #74aee0;
 }
 
 .cabecalho {
@@ -148,9 +148,14 @@ main {
     grid-template-columns: 1fr
 }
 
+#membros.grade .cartao .site {
+    color: #031668;
+
+}
+
 .cartao {
-    background: #fff;
-    border: 1px solid #ddd;
+    background: #ffffff;
+    border: 1px solid #dddddd;
     border-radius: 10px;
     padding: 1rem;
     text-align: center
@@ -202,7 +207,7 @@ main {
 
 #membros.lista .cartao .endereco,
 #membros.lista .cartao .telefone {
-    color: #444;
+    color: #444444;
     font-size: .95rem;
 }
 
@@ -217,7 +222,7 @@ main {
 footer {
     display: block;
     padding: 10px;
-    background-color: #8596bc;
+    background-color: #74aee0;
     color: #000000;
 }
 
@@ -245,6 +250,6 @@ footer {
 }
 
 .social a:hover {
-    background-color: #ddd;
+    background-color: #dddddd;
 }
 
