@@ -1,31 +1,52 @@
 @media only screen and (min-width: 38rem) {
-    header, main, nav,footer {
+
+    header,
+    main,
+    nav,
+    footer {
         max-width: 1200px;
-        margin: 0;    
+        margin: 0;
     }
-    
+
     header {
         display: grid;
         grid-template-columns: 2fr 2fr;
         gap: 10px;
     }
-    
+
     .hamburger {
         display: none;
     }
-    
+
     .navegacao {
         display: block;
     }
-    
+
     .navegacao ul {
         display: flex;
         justify-content: space-around;
         margin: 0;
     }
-    
+
     .navegacao a {
         border: none;
+    }
+
+    .inicio-grid {
+        grid-template-columns: 2fr 1fr 1fr;
+        align-items: start;
+    }
+
+    .destaques-grid {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+    }
+
+    /* O cartão mantém o MESMO layout do celular:
+       nome em cima, logo à esquerda, dados à direita.
+       Só o tamanho da fonte cresce um pouco. */
+    .destaque-info {
+        font-size: .9rem;
     }
 
     #membros.grade {
@@ -37,7 +58,7 @@
         align-items: center;
         gap: 1.5rem;
     }
-    
+
     #membros.lista .cartao .endereco {
         white-space: pre-line;
     }

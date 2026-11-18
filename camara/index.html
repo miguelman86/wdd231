@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal - Camara de Comercio Osasco</title>
+    <meta name="description" content="Pagina principal da Camara de Comercio Osasco convidando os visitantes a conhecerem sobre a Camara de Comercio Osasco, mostrar os eventos atuais, mostrar uma seçao de tempo e algumas empresas de destaque asociadas.">
+    <meta name="author" content="Miguel Jose Mansilla Avila">
+    <link rel="icon" href="imagens/logo.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <meta property="og:title" content="Camara de Comercio Osasco">
+    <meta property="og:description"
+        content="Pagina principal da Camara de Comercio Osasco convidando os visitantes a conhecerem sobre a Camara de Comercio Osasco, mostrar os eventos atuais, mostrar uma seçao de tempo e algumas empresas de destaque asociadas.">
+    <meta property="og:image" content="https://miguelman86.github.io/wdd231/camara/imagens/hero.webp">
+    <meta property="og:url" content="https://miguelman86.github.io/wdd231/camara/">
+
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/tempo.js" defer></script>
+    <script src="scripts/destaques.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <img src="imagens/logo.svg" alt="logo da empresa">
+            <h1 class="nome-empresa">Câmara de Comercio Osasco</h1>
+            <button id="ham-btn" class="hamburger" aria-label="Abrir menu de navegação"></button>
+        </div>
+    
+        <nav id="barra-navegacao" class="navegacao">
+            <ul>
+                <li class="atual"><a href="index.html">Pagina Inicial</a></li>
+                <li><a href="diretorio.html">Diretorio</a></li>
+                <li><a href="#">Associe-se</a></li>
+                <li><a href="#">Descubra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <img src="imagens/hero.webp" alt="imagem principal" width="1200" height="600" fetchpriority="high">
+            <div class="hero-texto">
+                <h2>Bem-vindo à Câmara de Comércio Osasco</h2>
+                <p>Conectando empresas, fortalecendo negócios e fazendo Osasco crescer.</p>
+                <a class="cta" href="#">Associe-se Agora</a>
+            </div>
+        </section>
+
+        <h2 class="titulo-inicio">Início</h2>
+
+        <div class="inicio-grid">
+            <section class="card-inicio eventos">
+                <h2>Eventos Atuais</h2>
+                <article class="evento">
+                    <h3>Feira de Negócios de Osasco</h3>
+                    <p><strong>Data:</strong> Sábado, 22 de novembro de 2026 • 10h às 18h</p>
+                    <p><strong>Local:</strong> Centro de Eventos de Osasco — Av. dos Autonomistas</p>
+                    <p>Encontre parceiros, clientes e fornecedores da região. Entrada gratuita para membros.</p>
+                    <a href="#">Saiba mais</a>
+                </article>
+                <article class="evento">
+                    <h3>Workshop: Marketing Digital para Pequenas Empresas</h3>
+                    <p><strong>Data:</strong> Quarta-feira, 26 de novembro de 2026 • 19h</p>
+                    <p><strong>Local:</strong> Auditório da Câmara — Rua das Flores, 987</p>
+                    <p>Aprenda a atrair clientes locais com redes sociais e Google. Vagas limitadas.</p>
+                    <a href="#">Saiba mais</a>
+                </article>
+                <article class="evento">
+                    <h3>Café com Empresários</h3>
+                    <p><strong>Data:</strong> Sexta-feira, 28 de novembro de 2026 • 8h</p>
+                    <p><strong>Local:</strong> Sede da Câmara — Rua das Flores, 987</p>
+                    <p>Networking mensal com café da manhã e troca de experiências entre associados.</p>
+                    <a href="#">Saiba mais</a>
+                </article>
+            </section>
+            <section class="card-inicio clima">
+                <h2>Clima</h2>
+                <div id="tempo-atual" class="tempo-atual">
+                    <p>Carregando o tempo...</p>
+                </div>
+                <p class="fonte-tempo">Fonte: OpenWeatherMap</p>
+            </section>
+            <section class="card-inicio previsao-clima">
+                <h2>Previsão de Clima</h2>
+                <div id="previsao" class="previsao"></div>
+            </section>
+            </div>
+            <section class="destaques">
+                <h2>Empresas em Destaque</h2>
+                <p class="destaques-sub">Conheça alguns dos nossos membros Ouro e Prata.</p>
+                <div id="destaques" class="destaques-grid"></div>
+            </section> 
+
+    </main>
+
+    <footer>
+        <div class="endereco">
+            <p>Camara de Comercio de Osasco</p>
+            <p>Rua das Flores, 987</p>
+            <p>Osasco, SP</p>
+            <p>contato@camaradeosasco.org.br</p>
+            <p>(11) 4412-6789</p>
+        </div>
+        <div class="social">
+            <a href="https://www.youtube.com/" target="_blank"><img src="imagens/youtube.svg" alt="logo do github"
+                    width="16" height="16"></a>
+            <a href="https://x.com/?lang=pt" target="_blank"><img src="imagens/twitter-x.svg" alt="logo do facebook"
+                    width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/miguel-mancilla/" target="_blank"><img src="imagens/linkedin.svg"
+                    alt="logo do linkedin" width="16" height="16"></a>
+        </div>
+        <div class="data">
+            <p>Projeto da Aula WDD231</p>
+            <p>Miguel Jose Mansilla Avila</p>
+            <p>&copy; <span id="anoatual"></span> Câmara de Comercio Osasco</p>
+            <p id="ultimaModificacao"></p>
+        </div>
+    
+    </footer>
+    
+</body>
+</html>
+
+

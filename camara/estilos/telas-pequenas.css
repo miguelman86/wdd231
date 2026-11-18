@@ -105,6 +105,7 @@ header h1 {
 }
 
 /*******  MAIN  ********/
+/* ******* DIRETORIO ********/
 
 main {
     background-color: var(--fundo-claro);
@@ -223,6 +224,263 @@ main {
     word-break: break-all;
 }
 
+/* ********* PAGINA PRINCIPAL *********/
+
+.hero {
+    position: relative;
+    margin: -1rem -1rem 1rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+}
+
+.hero-texto {
+    background: rgba(0, 0, 0, .55);
+    color: var(--branco);
+    padding: 1rem;
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    border-radius: 10px;
+}
+
+.hero-texto h2 {
+    font-size: 1.5rem;
+    margin-bottom: .4rem;
+    font-family: "Merriweather", serif;
+}
+
+.hero-texto p {
+    margin-bottom: .8rem;
+}
+
+.cta {
+    display: inline-block;
+    background: var(--azul-vivo);
+    color: var(--branco);
+    padding: .8rem 1.4rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.cta:hover {
+    background: var(--ciano-neon);
+    color: var(--texto-escuro);
+}
+
+.inicio-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.card-inicio {
+    background: var(--branco);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.titulo-inicio {
+    font-family: "Merriweather", serif;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.card-inicio {
+    overflow: hidden;
+}
+
+.card-inicio h2 {
+    font-family: "Merriweather", serif;
+    background: #333;
+    color: var(--branco);
+    margin: -1rem -1rem .8rem;
+    padding: .6rem 1rem;
+    font-size: 1.1rem;
+}
+
+.evento {
+    padding: .8rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.evento:last-child {
+    border-bottom: none;
+}
+
+.evento h3 {
+    font-size: 1.05rem;
+    margin-bottom: .3rem;
+}
+
+.evento p {
+    margin-bottom: .3rem;
+    line-height: 1.5;
+}
+
+.evento a {
+    color: var(--azul-vivo);
+    font-weight: 700;
+}
+
+.tempo-atual {
+    text-align: center;
+    padding: .5rem 0 1rem;
+}
+
+.temp-grande {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.tempo-desc {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.previsao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.linha-previsao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+}
+
+.linha-previsao strong {
+    font-size: 1.2rem;
+}
+
+.dia-previsao {
+    background: var(--fundo-claro2);
+    border-radius: 10px;
+    padding: .8rem;
+    text-align: center;
+}
+
+.dia-nome {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.dia-temp {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.dia-desc {
+    text-transform: capitalize;
+}
+
+.fonte-tempo {
+    font-size: .85rem;
+    color: #555;
+    margin-top: .8rem;
+    text-align: center;
+}
+
+.destaques {
+    margin-top: 1.5rem;
+}
+
+.destaques h2 {
+    font-family: "Merriweather", serif;
+    text-align: center;
+    margin-bottom: .3rem;
+}
+
+.destaques-sub {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.destaques-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.cartao-destaque {
+    background: #e3e3e3;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.destaque-topo {
+    text-align: center;
+    padding-bottom: .8rem;
+    border-bottom: 1px solid #999;
+}
+
+.destaque-topo h3 {
+    font-size: 1.05rem;
+    margin-bottom: .2rem;
+}
+
+.destaque-topo p {
+    font-size: .9rem;
+    color: #444;
+}
+
+.destaque-corpo {
+    display: flex;
+    gap: .8rem;
+    align-items: flex-start;
+    padding-top: .8rem;
+    text-align: left;
+}
+
+.destaque-corpo img {
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+    object-fit: contain;
+    background: var(--branco);
+    border: 1px solid #999;
+}
+
+.destaque-info {
+    flex: 1;
+    min-width: 0;
+    font-size: .85rem;
+    line-height: 1.5;
+}
+
+.destaque-info p {
+    margin-bottom: .2rem;
+    overflow-wrap: break-word;
+}
+
+.destaque-info a {
+    color: var(--texto-escuro);
+    overflow-wrap: break-word;
+}
+
+.destaque-nivel {
+    text-align: center;
+    font-weight: 700;
+    font-size: .85rem;
+    margin-top: .8rem;
+}
+
 /********  FOOTER  *********/
 
 footer {
@@ -237,7 +495,7 @@ footer {
     column-gap: 8px;
     margin: 0;
     padding: 20px;
-    
+
 }
 
 .social a {
@@ -257,3 +515,36 @@ footer {
     background-color: var(--fundo-claro);
 }
 
+
+/******* TEMPO - criado via JS (tempo.js) *******/
+
+.tempo-item-atual {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    background-color: #f0e15f;
+}
+
+.tempo-item-atual img {
+    width: 80px;
+    height: 80px;
+}
+
+.temperatura {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.descricao {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.clima-detalhes {
+    list-style: none;
+    margin-top: 1rem;
+    line-height: 1.6;
+    text-align: left;
+}
