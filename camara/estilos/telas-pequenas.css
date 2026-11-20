@@ -216,6 +216,11 @@ main {
     font-weight: 700;
 }
 
+.nome, .endereco, .telefone, .descricao {
+    padding: 0.2rem;
+
+}
+
 #membros.grade .cartao .site {
     color: var(--azul-vivo);
 }
