@@ -1,17 +1,23 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 660px) {
 
     header,
     main,
-    nav,
     footer {
         max-width: 1200px;
-        margin: 0;
+        margin: 0 auto;
     }
 
     header {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        gap: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .cabecalho {
+        flex-shrink: 0;
+        width: auto;
     }
 
     .hamburger {
@@ -20,53 +26,62 @@
 
     .navegacao {
         display: block;
+        flex-basis: auto;
+        margin-left: auto;
     }
 
     .navegacao ul {
         display: flex;
-        justify-content: space-around;
-        margin: 0;
+        align-items: center;
+        gap: 0.5rem;
     }
-
+    
     .navegacao a {
         border: none;
+        padding: 0.75rem 0.9rem;
+        white-space: nowrap;
+        border-radius: 6px;
+    }
+
+    .hero-texto {
+        background: var(--sombra);
+        position: absolute;
+        left: 1.5rem;
+        right: 1.5rem;
+        bottom: 1.5rem;
+        border-radius: 10px;
+        text-align: left;
     }
 
     .inicio-grid {
-        grid-template-columns: 2fr 1fr 1fr;
-        align-items: start;
-    }
-
-    .destaques-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1.5fr 1fr;
         align-items: stretch;
     }
 
-    /* O cartão mantém o MESMO layout do celular:
-       nome em cima, logo à esquerda, dados à direita.
-       Só o tamanho da fonte cresce um pouco. */
+    .destaques-grid {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: stretch;
+    }
+
     .destaque-info {
         font-size: .9rem;
     }
 
     #membros.grade {
-        grid-template-columns: repeat(3, 1fr)
+        grid-template-columns: repeat(2, 1fr)
     }
 
     #membros.lista .cartao {
-        grid-template-columns: 1fr 1fr 1.5fr .7fr 1.3fr .5fr;
+        grid-template-columns: 1fr 1fr 1.5fr .7fr;
         align-items: center;
         gap: 1.5rem;
     }
 
-    #membros.lista .cartao .endereco {
-        white-space: pre-line;
-    }
-
     footer {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr;
         gap: 20px;
+        align-items: center;
     }
 
     footer div {
@@ -74,5 +89,36 @@
         min-width: 0;
     }
 
+    .data, .endereco {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .inicio-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .clima-bloco {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .destaques-grid {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+    }
+    #membros.grade {
+        grid-template-columns: repeat(3, 1fr)
+    }
+    #membros.lista .cartao {
+    grid-template-columns: 1fr 1fr 1.5fr .7fr 1.3fr .5fr;
+    align-items: center;
+    gap: 1.5rem;
+    }
+    footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    }
 
 }

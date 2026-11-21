@@ -73,6 +73,7 @@ header {
 
 .cabecalho {
     gap: 10px;
+    width: 100%;
 }
 
 header img {
@@ -94,6 +95,7 @@ header h1 {
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px;
+    margin-left: auto;
 }
 
 .hamburger::after {
@@ -227,7 +229,7 @@ main {
 
 #membros.lista .cartao {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: .15rem;
     text-align: left;
     border: none;
@@ -278,14 +280,10 @@ main {
 }
 
 .hero-texto {
-    background: var(--sombra);
+    background: var(--ciano-neon);
     color: var(--branco);
-    padding: 0.1rem;
-    position: absolute;
-    left: .5rem;
-    right: .5rem;
-    bottom: .1rem;
-    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
 }
 
 .hero-texto h2 {
@@ -327,7 +325,7 @@ main {
 }
 
 .card-inicio h2 {
-    background: var(--cinza-escuro);
+    background: var(--ciano-neon);
     color: var(--branco);
     margin: -1rem -1rem .8rem;
     padding: .6rem 1rem;
@@ -356,6 +354,17 @@ main {
 .evento a {
     color: var(--azul-vivo);
     font-weight: 700;
+}
+
+.clima-bloco {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.previsao-clima {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .tempo-atual {
@@ -503,6 +512,14 @@ footer {
     justify-content: center;
     column-gap: 8px;
     padding: 20px;
+}
+
+.endereco, .data {
+    text-align: center;
+}
+
+.endereco p, .data p {
+    padding: 0.1rem;
 }
 
 .social a {
