@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agradecimento da Camara de Comercio Osasco</title>
+    <meta name="description"
+        content="Agradecimento as empresas que encheram o formulario da associaçao a camara de comercio osasco.">
+    <meta name="author" content="Miguel Jose Mansilla Avila">
+    <link rel="icon" href="imagens/logo.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    
+    <meta property="og:title" content="Agradecimento da Camara de Comercio Osasco">
+    <meta property="og:description"
+        content="Agradecimento as empresas que encheram o formulario da associaçao a camara de comercio osasco.">
+    <meta property="og:image" content="https://miguelman86.github.io/wdd231/camara/imagens/hero.webp">
+    <meta property="og:url" content="https://miguelman86.github.io/wdd231/camara/">
+    
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/agradecimento.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <img src="imagens/logo.svg" alt="logo da empresa">
+            <h1 class="nome-empresa">Câmara de Comercio Osasco</h1>
+            <button id="ham-btn" class="hamburger" aria-label="Abrir menu de navegação"></button>
+        </div>
+    
+        <nav id="barra-navegacao" class="navegacao">
+            <ul>
+                <li><a href="index.html">Pagina Inicial</a></li>
+                <li><a href="diretorio.html">Diretorio</a></li>
+                <li class="atual"><a href="#">Associe-se</a></li>
+                <li><a href="#">Descubra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Obrigado pelo seu pedido de associação!</h1>
+        <p class="info-recebida">Recebemos as informações submetidas com os seguintes dados obrigatórios:</p>
+        <div id="resumo-dados"></div>
+
+    </main>
+
+    <footer>
+        <div class="endereco">
+            <p>Camara de Comercio de Osasco</p>
+            <p>Rua das Flores, 987</p>
+            <p>Osasco, SP</p>
+            <p>contato@camaradeosasco.org.br</p>
+            <p>(11) 4412-6789</p>
+        </div>
+        <div class="social">
+            <a href="https://www.youtube.com/" target="_blank"><img src="imagens/youtube.svg" alt="logo do github"
+                    width="16" height="16"></a>
+            <a href="https://x.com/?lang=pt" target="_blank"><img src="imagens/twitter-x.svg" alt="logo do facebook"
+                    width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/miguel-mancilla/" target="_blank"><img src="imagens/linkedin.svg"
+                    alt="logo do linkedin" width="16" height="16"></a>
+        </div>
+        <div class="data">
+            <p>Projeto da Aula WDD231</p>
+            <p>Miguel Jose Mansilla Avila</p>
+            <p>&copy; <span id="anoatual"></span> Câmara de Comercio Osasco</p>
+            <p id="ultimaModificacao"></p>
+        </div>
+    
+    </footer>
+    
+</body>
+</html>

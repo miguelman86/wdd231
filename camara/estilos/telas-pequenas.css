@@ -7,6 +7,7 @@
 :root {
     --azul-profundo: #0e4cd1;
     --azul-vivo: #0427da;
+    --azul-claro: #96bbe6;
     --ciano-neon: #102583;
     --fundo-claro: #F6F9FC;
     --fundo-claro2: #eaf4ff;
@@ -560,4 +561,177 @@ footer {
     margin-top: 1rem;
     line-height: 1.6;
     text-align: left;
+}
+
+/******* ASSOCIAÇAO *******/
+
+form {
+    margin: 1rem 2%;
+    label {
+        display: block;
+        font-size: 1rem;
+        color: var(--azul-vivo);
+        padding: 0.2rem;
+    }
+    
+    fieldset {
+        margin-bottom: 1rem;
+        padding: 0.75rem;
+    }
+    
+    textarea {
+        display: block;
+        margin: 0.4rem 0 1.25rem 0;
+        padding: 0.6rem;
+        border: 1px solid #999;
+        border-radius: 4px;
+        border-left-width: 5px;
+        border-left-color: #555;
+        font-size: 1rem;
+        color: #3d405b;
+        width: 300px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="email"],
+    select {
+        display: block;
+        margin: 0.1rem 0 1rem 0;
+        padding: 0.3rem;
+        border: 1px solid #999;
+        border-radius: 4px;
+        border-left-width: 5px;
+        border-left-color: #555;
+        font-size: 1rem;
+        color: #3d405b;
+        width: 300px;
+    }
+    input:required {
+        border-left-color: #d70000;
+    }
+    
+    input:focus {
+        border-left-color: black;
+        outline: none;
+    }
+    
+    input:required:valid {
+        border-left-color: green;
+    }
+}
+
+form button[type="submit"] {
+    background-color: var(--azul-profundo);
+    /* ou #ccc / var(--cinza-fundo) */
+    color: var(--branco);
+    /* use #000203 se o fundo for cinza claro */
+    border: none;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.grade-cartoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.cartao-nivel {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: var(--azul-claro);
+}
+
+.cartao-nivel h3 {
+    margin-top: 0;
+}
+
+.abrir-modal {
+    display: inline-block;
+    padding: 0.5rem;
+    font-weight: bold;
+    background-color: var(--azul-vivo);
+    color: var(--branco);
+    border-radius: 5px;
+}
+
+dialog.modal-nivel {
+    width: min(90vw, 480px);
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 1.25rem;
+}
+
+dialog.modal-nivel::backdrop {
+    background-color: rgba(7, 148, 212, 0.55);
+}
+
+.fechar-modal {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: var(--azul-claro);
+}
+
+#resumo-dados {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.info-recebida {
+    font-size: 20px;
+    padding: 10px;
+}
+
+@keyframes entradaCartao {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cartao-nivel {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    animation: entradaCartao 0.55s ease-out both;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cartao-nivel:nth-child(2) {
+    animation-delay: 0.08s;
+}
+
+.cartao-nivel:nth-child(3) {
+    animation-delay: 0.16s;
+}
+
+.cartao-nivel:nth-child(4) {
+    animation-delay: 0.24s;
+}
+
+.cartao-nivel:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cartao-nivel {
+        animation: none;
+        transition: none;
+    }
+
+    .cartao-nivel:hover {
+        transform: none;
+    }
 }

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associaçao da Camara de Comercio Osasco</title>
+    <meta name="description"
+        content="Diretorio das empresas que estaon asociadas a camara de comercio osasco, com os dados mais importentes de cada uma.">
+    <meta name="author" content="Miguel Jose Mansilla Avila">
+    <link rel="icon" href="imagens/logo.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    
+    <meta property="og:title" content="Associaçao da Camara de Comercio Osasco">
+    <meta property="og:description" content="Associaçao da Camara de Comercio Osasco. Um formulario com os dados das empressas que desejam unirse a Camara de Comercio Osasco">
+    <meta property="og:image" content="https://miguelman86.github.io/wdd231/camara/imagens/hero.webp">
+    <meta property="og:url" content="https://miguelman86.github.io/wdd231/camara/">
+    
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/associacao.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <img src="imagens/logo.svg" alt="logo da empresa">
+            <h1 class="nome-empresa">Câmara de Comercio Osasco</h1>
+            <button id="ham-btn" class="hamburger" aria-label="Abrir menu de navegação"></button>
+        </div>
+    
+        <nav id="barra-navegacao" class="navegacao">
+            <ul>
+                <li><a href="index.html">Pagina Inicial</a></li>
+                <li ><a href="diretorio.html">Diretorio</a></li>
+                <li class="atual"><a href="#">Associe-se</a></li>
+                <li><a href="#">Descubra</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="formulario">
+
+                <h1>Formulario de inscriçao de Associado</h1>
+            
+                <form method="get" action="agradecimento.html">
+                    <label>Nome <input type="text" name="nome" required autocomplete="given-name" title="Seu primeiro nome"></label>
+                    <label>Sobrenome <input type="text" name="sobrenome" required autocomplete="family-name"
+                            title="Seu Sobrenome"></label>
+                    <label>Cargo na Organização <input type="text" name="cargo" pattern="[A-Za-zÀ-ÿ\s\-]{7,}"
+                            title="Apenas letras, espaços ou hífens, com pelo menos 7 caracteres"
+                            autocomplete="organization-title"></label>
+                    <label>Email <input type="email" name="email" required placeholder="miguel@gmail.com" title="Seu email"
+                            autocomplete="email"></label>
+                    <label>Numero de Celular <input type="tel" name="celular" required autocomplete="tel"
+                            title="Um numero de telefone com traços" placeholder="55-71-1111-1234"></label>
+                    <label>Nome da empresa <input type="text" name="empresa" required autocomplete="organization"
+                            title="Nome da empresa ou organização"></label>
+                    <fieldset>
+                        <legend>Nivel de associação</legend>
+                        <label>
+                            <input type="radio" name="nivel" value="np" checked>Associação NP (sem fins lucrativos, sem taxa)
+                        </label>
+                        <label>
+                            <input type="radio" name="nivel" value="bronze">Associação Bronze
+                        </label>
+                        <label>
+                            <input type="radio" name="nivel" value="silver">Associação Prata (Silver)
+                        </label>
+                        <label>
+                            <input type="radio" name="nivel" value="gold">Associação Ouro (Gold)
+                        </label>
+                    </fieldset>
+                    <label>
+                        Descrição das atividades da empresa <textarea name="descricao" id="descricao" rows="4"
+                            title="Descreva brevemente a atividade da sua organização"></textarea>
+                    </label>
+                    <input type="hidden" name="dataHoraEnvio" id="dataHoraEnvio">
+                    
+                    <button type="submit">Enviar pedido de associação</button>
+                  
+                </form>
+            
+            </section>
+            
+            
+            <section class="niveis-associacao" aria-label="Níveis de associação">
+                <h2>Níveis de Associação</h2>
+            
+                <div class="grade-cartoes">
+                    <article class="cartao-nivel card-np">
+                        <h3>Associação NP</h3>
+                        <p>Sem taxa anual para organizações sem fins lucrativos.</p>
+                        <a href="#modal-np" class="abrir-modal" data-modal="modal-np">Mais informações</a>
+                    </article>
+            
+                    <article class="cartao-nivel card-bronze">
+                        <h3>Associação Bronze</h3>
+                        <p>Entrada ideal para pequenas empresas e empreendedores.</p>
+                        <a href="#modal-bronze" class="abrir-modal" data-modal="modal-bronze">Mais informações</a>
+                    </article>
+            
+                    <article class="cartao-nivel card-silver">
+                        <h3>Associação Prata (Silver)</h3>
+                        <p>Maior visibilidade, formação e descontos em eventos.</p>
+                        <a href="#modal-silver" class="abrir-modal" data-modal="modal-silver">Mais informações</a>
+                    </article>
+            
+                    <article class="cartao-nivel card-gold">
+                        <h3>Associação Ouro (Gold)</h3>
+                        <p>Máximo destaque institucional, publicidade e benefícios exclusivos.</p>
+                        <a href="#modal-gold" class="abrir-modal" data-modal="modal-gold">Mais informações</a>
+                    </article>
+                </div>
+            </section>
+            </div>
+
+        </div>
+
+        
+        
+        <dialog id="modal-np" class="modal-nivel">
+            <h3>Benefícios — Associação NP</h3>
+            <p><strong>Taxa:</strong> Sem taxa (organizações sem fins lucrativos elegíveis).</p>
+            <ul>
+                <li>Presença no diretório da Câmara de Comércio.</li>
+                <li>Acesso a boletins informativos e comunicados oficiais.</li>
+                <li>Participação em sessões comunitárias selecionadas.</li>
+            </ul>
+            <button type="button" class="fechar-modal">Fechar</button>
+        </dialog>
+        
+        <dialog id="modal-bronze" class="modal-nivel">
+            <h3>Benefícios — Associação Bronze</h3>
+            <p><strong>Taxa:</strong> Nível base de contribuição.</p>
+            <ul>
+                <li>Todos os benefícios do nível NP.</li>
+                <li>Desconto em inscrições de eventos e workshops.</li>
+                <li>Acesso a formações técnicas introdutórias.</li>
+            </ul>
+            <button type="button" class="fechar-modal">Fechar</button>
+        </dialog>
+        
+        <dialog id="modal-silver" class="modal-nivel">
+            <h3>Benefícios — Associação Prata (Silver)</h3>
+            <p><strong>Taxa:</strong> Contribuição intermédia.</p>
+            <ul>
+                <li>Todos os benefícios do nível Bronze.</li>
+                <li>Descontos ampliados em eventos especiais e palestras.</li>
+                <li>Destaque intermédio no diretório e ações de networking.</li>
+            </ul>
+            <button type="button" class="fechar-modal">Fechar</button>
+        </dialog>
+        
+        <dialog id="modal-gold" class="modal-nivel">
+            <h3>Benefícios — Associação Ouro (Gold)</h3>
+            <p><strong>Taxa:</strong> Contribuição superior com pacote completo.</p>
+            <ul>
+                <li>Todos os benefícios do nível Prata (Silver).</li>
+                <li>Posições de publicidade e destaque na página inicial.</li>
+                <li>Acesso prioritário a eventos especiais, formações e condições exclusivas.</li>
+            </ul>
+            <button type="button" class="fechar-modal">Fechar</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="endereco">
+            <p>Camara de Comercio de Osasco</p>
+            <p>Rua das Flores, 987</p>
+            <p>Osasco, SP</p>
+            <p>contato@camaradeosasco.org.br</p>
+            <p>(11) 4412-6789</p>
+        </div>
+        <div class="social">
+            <a href="https://www.youtube.com/" target="_blank"><img src="imagens/youtube.svg" alt="logo do github"
+                    width="16" height="16"></a>
+            <a href="https://x.com/?lang=pt" target="_blank"><img src="imagens/twitter-x.svg" alt="logo do facebook"
+                    width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/miguel-mancilla/" target="_blank"><img src="imagens/linkedin.svg"
+                    alt="logo do linkedin" width="16" height="16"></a>
+        </div>
+        <div class="data">
+            <p>Projeto da Aula WDD231</p>
+            <p>Miguel Jose Mansilla Avila</p>
+            <p>&copy; <span id="anoatual"></span> Câmara de Comercio Osasco</p>
+            <p id="ultimaModificacao"></p>
+        </div>
+    
+    </footer>
+    
+</body>
+</html>
