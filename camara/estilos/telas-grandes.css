@@ -93,8 +93,6 @@
         text-align: center;
     }
     .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         gap: 15px;
     }
     .cartao-nivel {
@@ -134,13 +132,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     align-items: center;
-    }
-
-    .cartao-nivel {
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        padding: 1rem;
-        background-color: var(--azul-claro);
     }
 
 }

@@ -7,7 +7,7 @@
 :root {
     --azul-profundo: #0e4cd1;
     --azul-vivo: #0427da;
-    --azul-claro: #96bbe6;
+    --azul-claro: #cbe3ff;
     --ciano-neon: #102583;
     --fundo-claro: #F6F9FC;
     --fundo-claro2: #eaf4ff;
@@ -573,16 +573,26 @@ form {
         color: var(--azul-vivo);
         padding: 0.2rem;
     }
+
+    legend {
+        color: var(--cinza-escuro);
+        padding-top: 0.2rem;
+        font-weight: bold;
+    }
     
     fieldset {
         margin-bottom: 1rem;
         padding: 0.75rem;
     }
     
-    textarea {
+    textarea,
+    input[type="text"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="email"],
+    select {
         display: block;
-        margin: 0.4rem 0 1.25rem 0;
-        padding: 0.6rem;
+        padding: 0.3rem;
         border: 1px solid #999;
         border-radius: 4px;
         border-left-width: 5px;
@@ -597,16 +607,12 @@ form {
     input[type="date"],
     input[type="email"],
     select {
-        display: block;
-        margin: 0.1rem 0 1rem 0;
-        padding: 0.3rem;
-        border: 1px solid #999;
-        border-radius: 4px;
-        border-left-width: 5px;
-        border-left-color: #555;
-        font-size: 1rem;
-        color: #3d405b;
-        width: 300px;
+    margin: 0.1rem 0 1rem 0;
+    }
+
+    textarea {
+        margin: 0.4rem 0 1.25rem 0;
+        padding: 0.6rem;
     }
     input:required {
         border-left-color: #d70000;
@@ -624,9 +630,7 @@ form {
 
 form button[type="submit"] {
     background-color: var(--azul-profundo);
-    /* ou #ccc / var(--cinza-fundo) */
     color: var(--branco);
-    /* use #000203 se o fundo for cinza claro */
     border: none;
     border-radius: 1rem;
     padding: 0.75rem 1.5rem;
@@ -645,6 +649,8 @@ form button[type="submit"] {
     border-radius: 8px;
     padding: 1rem;
     background-color: var(--azul-claro);
+    animation: entradaCartao 0.55s ease-out both;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .cartao-nivel h3 {
@@ -678,11 +684,7 @@ dialog.modal-nivel::backdrop {
     background-color: var(--azul-claro);
 }
 
-#resumo-dados {
-    font-size: 20px;
-    padding: 10px;
-}
-
+#resumo-dados,
 .info-recebida {
     font-size: 20px;
     padding: 10px;
