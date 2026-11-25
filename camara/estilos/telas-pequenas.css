@@ -20,6 +20,10 @@
     --cinza-fundo: #e3e3e3;
     --amarelo-tempo: #f0e15f;
     --sombra: rgba(0, 0, 0, .55);
+    --sombra2: rgba(0, 0, 0, 0.08);
+    --vermelho: #d70000;
+    --verde: #03ce14;
+    --backdrop: rgba(7, 148, 212, 0.55);
     --fonte-titulo: "Merriweather", serif;
 }
 
@@ -461,7 +465,7 @@ main {
 
 .destaque-topo p {
     font-size: .9rem;
-    color: #444;
+    color: var(--cinza-medio);
 }
 
 .destaque-corpo {
@@ -593,20 +597,18 @@ form {
     select {
         display: block;
         padding: 0.3rem;
-        border: 1px solid #999;
+        border: 1px solid var(--cinza-medio);
         border-radius: 4px;
         border-left-width: 5px;
-        border-left-color: #555;
+        border-left-color: var(--cinza-medio);
         font-size: 1rem;
-        color: #3d405b;
+        color: var(--cinza-escuro);
         width: 300px;
     }
 
     input[type="text"],
     input[type="tel"],
-    input[type="date"],
-    input[type="email"],
-    select {
+    input[type="email"] {
     margin: 0.1rem 0 1rem 0;
     }
 
@@ -615,16 +617,16 @@ form {
         padding: 0.6rem;
     }
     input:required {
-        border-left-color: #d70000;
+        border-left-color: var(--vermelho);
     }
     
     input:focus {
-        border-left-color: black;
+        border-left-color: var(--texto-escuro);
         outline: none;
     }
     
     input:required:valid {
-        border-left-color: green;
+        border-left-color: var(--verde);
     }
 }
 
@@ -645,7 +647,7 @@ form button[type="submit"] {
 }
 
 .cartao-nivel {
-    border: 1px solid #ccc;
+    border: 1px solid var(--cinza-fundo);
     border-radius: 8px;
     padding: 1rem;
     background-color: var(--azul-claro);
@@ -668,13 +670,13 @@ form button[type="submit"] {
 
 dialog.modal-nivel {
     width: min(90vw, 480px);
-    border: 1px solid #444;
+    border: 1px solid var(--cinza-escuro);
     border-radius: 8px;
     padding: 1.25rem;
 }
 
 dialog.modal-nivel::backdrop {
-    background-color: rgba(7, 148, 212, 0.55);
+    background-color: var(--backdrop);
 }
 
 .fechar-modal {
@@ -702,14 +704,6 @@ dialog.modal-nivel::backdrop {
     }
 }
 
-.cartao-nivel {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 1rem;
-    animation: entradaCartao 0.55s ease-out both;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
 .cartao-nivel:nth-child(2) {
     animation-delay: 0.08s;
 }
@@ -724,7 +718,7 @@ dialog.modal-nivel::backdrop {
 
 .cartao-nivel:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 14px var(--texto-escuro);
 }
 
 @media (prefers-reduced-motion: reduce) {

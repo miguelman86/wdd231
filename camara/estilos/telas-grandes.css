@@ -84,22 +84,8 @@
         align-items: center;
     }
 
-    footer div {
-        flex: 1 1 0;
-        min-width: 0;
-    }
-
-    .data, .endereco {
-        text-align: center;
-    }
     .container {
         gap: 15px;
-    }
-    .cartao-nivel {
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        padding: 1rem;
-        background-color: var(--azul-claro);
     }
 }
 
@@ -113,25 +99,19 @@
     }
     .destaques-grid {
         grid-template-columns: repeat(3, 1fr);
-        align-items: stretch;
     }
     #membros.grade {
         grid-template-columns: repeat(3, 1fr)
     }
     #membros.lista .cartao {
     grid-template-columns: 1fr 1fr 1.5fr .7fr 1.3fr .5fr;
-    align-items: center;
-    gap: 1.5rem;
     }
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
     footer {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    align-items: center;
     }
 
 }
